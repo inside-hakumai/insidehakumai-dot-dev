@@ -2,7 +2,22 @@
   "name": "insidehakumai-dot-net",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "copy:html": "cpx ./src/index.html ./dist",
+    "start:dev": "npx webpack-dev-server"
+  },
   "repository": "git@github.com:inside-hakumai/insidehakumai-dot-net.git",
   "author": "inside-hakumai",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "css-loader": "^3.4.2",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0"
+  }
 }
