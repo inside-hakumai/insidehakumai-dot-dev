@@ -1,6 +1,6 @@
 {
   "name": "insidehakumai-dot-net",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "copy:html": "cpx ./src/index.html ./dist",
