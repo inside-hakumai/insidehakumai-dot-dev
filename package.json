@@ -1,0 +1,8 @@
+{
+  "name": "insidehakumai-dot-net",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:inside-hakumai/insidehakumai-dot-net.git",
+  "author": "inside-hakumai",
+  "license": "MIT"
+}
