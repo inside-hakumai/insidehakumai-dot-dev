@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-      - run: npm run build prod:build
+      - run: npm run prod:build
       - name: Upload deliverable
         uses: actions/upload-artifact@v1
         with:
