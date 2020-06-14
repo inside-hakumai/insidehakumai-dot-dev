@@ -4,15 +4,19 @@
   "main": "index.js",
   "scripts": {
     "format": "npx prettier-eslint --write \"{$PWD/src/*.@(ts|tsx|js|jsx),$PWD/*.@(ts|tsx|js|jsx)}\"",
-    "copy:html": "cpx ./src/index.html ./dist",
-    "start:dev": "npx webpack-dev-server",
-    "build": "npx webpack && yarn run copy:html"
+    "dev:client": "NODE_ENV=development webpack-dev-server --mode development",
+    "dev:build": "NODE_ENV=development npx webpack --mode development",
+    "dev:watch": "npx concurrently -n client -c 'bgGreen.bold' 'npm run dev:client'",
+    "dev:start": "NODE_ENV=development node ./server.js",
+    "prod:build": "NODE_ENV=production npx webpack --mode production",
+    "prod:start": "NODE_ENV=production npx forever ./server.js"
   },
   "repository": "git@github.com:inside-hakumai/insidehakumai-dot-net.git",
   "author": "inside-hakumai",
   "license": "MIT",
   "devDependencies": {
     "@cybozu/eslint-config": "^10.0.4",
+    "copy-webpack-plugin": "^6.0.2",
     "cpx": "^1.5.0",
     "css-loader": "^3.4.2",
     "eslint": "^7.2.0",
