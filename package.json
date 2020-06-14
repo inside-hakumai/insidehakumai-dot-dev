@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
+    "format": "npx prettier-eslint --write \"{$PWD/src/*.@(ts|tsx|js|jsx),$PWD/*.@(ts|tsx|js|jsx)}\"",
     "copy:html": "cpx ./src/index.html ./dist",
     "start:dev": "npx webpack-dev-server",
     "build": "npx webpack && yarn run copy:html"

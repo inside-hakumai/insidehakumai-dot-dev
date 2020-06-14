@@ -1,11 +1,11 @@
-require("@fortawesome/fontawesome-free/js/all")
+require("@fortawesome/fontawesome-free/js/all");
 
 import "normalize.css";
 import "./style.scss";
 
-const $ = require('jquery');
+const $ = require("jquery");
 
-$(window).on('load', () => {
-    $('html').removeAttr('style');
-    $('body').addClass('loaded');
+$(window).on("load", () => {
+  $("html").removeAttr("style");
+  $("body").addClass("loaded");
 });
